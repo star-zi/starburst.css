@@ -1,8 +1,9 @@
 /**
  * @name starburst
- * @description star's discord recolor edit
+ * @description star-zi's discord recolor edit
  * @author starburst
  * @version 1.0.0
+ * @source https://raw.githubusercontent.com/star-zi/starburst/main/starburst.theme.css
  * @authorId 709525409821229138
  * @invite hsP47UCB6M
 */
@@ -38,6 +39,11 @@ edit by starburst
 
 /* custom css below here */
 
+/* member count margin adjust 60px->50px */
+.membersWrap-3NUR2t.hasCounter .members-3WRCEx {
+    margin-top: 50px !important;
+}
+
 /* spotify seekbar color */
 .timeline-UWmgAx:hover .barFill-Dhkah7 {
     background: #8268b3 !important;
@@ -51,7 +57,7 @@ edit by starburst
 
 /* mute/deafen strike color */
 .strikethrough-2Kl6HF {
-    color: #7b64a7 !important;
+    color: #7b64a7;
 }
 
 /* nitro badge color */
