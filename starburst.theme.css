@@ -1,0 +1,88 @@
+/**
+ * @name starburst
+ * @description star's discord recolor edit
+ * @author starburst
+ * @version 1.0.0
+ * @authorId 709525409821229138
+ * @invite hsP47UCB6M
+*/
+
+/*
+discord recolor by devil bro
+edit by starburst 
+*/
+
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+
+:root {
+  --accentcolor: 130,104,179;
+  --accentcolor2: 255,173,252;
+  --linkcolor: 130,104,179;
+  --mentioncolor: 130,104,179;
+  --textbrightest: 255,255,255;
+  --textbrighter: 222,222,222;
+  --textbright: 185,185,185;
+  --textdark: 140,140,140;
+  --textdarker: 115,115,115;
+  --textdarkest: 80,80,80;
+  --text-normal: #fbfbfb;
+  --text-muted: #b6b6b6;
+  --backgroundaccent: 18,18,18;
+  --backgroundprimary: 13,13,13;
+  --backgroundsecondary: 12,12,12;
+  --backgroundsecondaryalt: 9,9,9;
+  --backgroundtertiary: 9,9,9;
+  --backgroundfloating: 12,12,12;
+  --settingsicons: 1;
+}
+
+/* custom css below here */
+
+/* spotify seekbar color */
+.timeline-UWmgAx:hover .barFill-Dhkah7 {
+    background: #8268b3 !important;
+}
+
+/* game icon background color */
+#app-mount .gameIcon-1mDo1J {
+    background-color: var(--backgroundtertiary);
+    color: var(--header-primary);
+}
+
+/* mute/deafen strike color */
+.strikethrough-2Kl6HF {
+    color: #7b64a7 !important;
+}
+
+/* nitro badge color */
+.premiumIcon-3PLiGh {
+    color: #DC7AE0;
+}
+
+/* reply arrow color */
+.repliedMessage-3Z6XBG:before {
+    border-left: var(--spine-width) solid #414141 !important;
+    border-bottom: 0 solid  #414141 !important;
+    border-right: 0 solid  #414141 !important;
+    border-top: var(--spine-width) solid  #414141 !important;
+}
+
+/* remove gift button*/
+.buttons-uaqb-5>.button-f2h6uQ:not(.BD-TeX-plugin-button)> :not(.translateButton-DhP9x8) {
+    display: none;
+  }
+  
+/* remove help button*/
+[href="https://support.discord.com"] {
+    display: none;
+}
+
+/* button */
+.theme-dark .lookFilled-yCfaCM.colorGrey-2iAG-B {
+    background-color: #111;
+}
+
+/* stream hover bg color */
+.body-2WIpo7 {
+    background-color: #0c0c0c;
+}
