@@ -10,7 +10,7 @@
 
 /*
 discord recolor by devil bro
-edit by starburst 
+edit by starburst
 */
 
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
@@ -39,9 +39,9 @@ edit by starburst
 
 /* custom css below here */
 
-/* member count margin adjust 60px->50px */
-.membersWrap-3NUR2t.hasCounter .members-3WRCEx {
-    margin-top: 50px !important;
+/* member count remove bottom border */
+#MemberCount {
+    border-bottom: 0px !important;
 }
 
 /* spotify seekbar color */
@@ -67,10 +67,10 @@ edit by starburst
 
 /* reply arrow color */
 .repliedMessage-3Z6XBG:before {
-    border-left: var(--spine-width) solid #414141 !important;
-    border-bottom: 0 solid  #414141 !important;
-    border-right: 0 solid  #414141 !important;
-    border-top: var(--spine-width) solid  #414141 !important;
+    border-left: var(--spine-width) solid rgb(77, 70, 92) !important;
+    border-bottom: 0 solid  rgb(77, 70, 92) !important;
+    border-right: 0 solid  rgb(77, 70, 92) !important;
+    border-top: var(--spine-width) solid  rgb(80, 70, 100) !important;
 }
 
 /* remove gift button*/
@@ -91,4 +91,10 @@ edit by starburst
 /* stream hover bg color */
 .body-2WIpo7 {
     background-color: #0c0c0c;
+}
+
+/* bd navbar */
+.colorInfo-1kEg3T {
+    background-color: #8268b3;
+    color: #fff;
 }
