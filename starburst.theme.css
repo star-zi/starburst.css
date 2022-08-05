@@ -1,19 +1,17 @@
 /**
  * @name starburst
- * @description star-zi's discord recolor edit
+ * @description A Discord theme for star-zi.
  * @author starburst
- * @version 1.0.0
+ * @version 1.0.1
+ * @website https://github.com/star-zi
  * @source https://raw.githubusercontent.com/star-zi/starburst/main/starburst.theme.css
  * @authorId 709525409821229138
- * @invite hsP47UCB6M
-*/
-
-/*
-discord recolor by devil bro
-edit by starburst
 */
 
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/Touchup.css");
+@import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
+
 
 :root {
   --accentcolor: 130,104,179;
@@ -37,64 +35,78 @@ edit by starburst
   --settingsicons: 1;
 }
 
-/* custom css below here */
+/* custom css below here
 
-/* member count remove bottom border */
+ * some code was taken from
+ * #css-snippets channel in
+ * the BetterDiscord server
+*/
+
+/* home button bg color */
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+    background-color: #0d0d0d;
+}
+
+/* remove bottom border from MemberCount in sidebar */
 #MemberCount {
     border-bottom: 0px !important;
 }
 
-/* spotify seekbar color */
+/* hide gift button */
+.buttons-uaqb-5>.button-f2h6uQ:not(.BD-TeX-plugin-button)> :not(.translateButton-DhP9x8) {
+    display: none;
+}
+
+/* hide nitro tab in dms */
+#private-channels a[href="/store"] {
+    display: none;
+}
+
+/* hide help button*/
+.toolbar-3_r2xA .anchor-1MIwyf {
+    display: none;
+}
+
+/* SpotifyControls seekbar color */
 .timeline-UWmgAx:hover .barFill-Dhkah7 {
     background: #8268b3 !important;
 }
 
-/* game icon background color */
-#app-mount .gameIcon-1mDo1J {
-    background-color: var(--backgroundtertiary);
-    color: var(--header-primary);
-}
-
-/* mute/deafen strike color */
+/* mute/deafen strikethrough color */
 .strikethrough-2Kl6HF {
     color: #7b64a7;
 }
 
-/* nitro badge color */
-.premiumIcon-3PLiGh {
-    color: #DC7AE0;
-}
-
-/* reply arrow color */
-.repliedMessage-3Z6XBG:before {
-    border-left: var(--spine-width) solid rgb(77, 70, 92) !important;
-    border-bottom: 0 solid  rgb(77, 70, 92) !important;
-    border-right: 0 solid  rgb(77, 70, 92) !important;
-    border-top: var(--spine-width) solid  rgb(80, 70, 100) !important;
-}
-
-/* remove gift button*/
-.buttons-uaqb-5>.button-f2h6uQ:not(.BD-TeX-plugin-button)> :not(.translateButton-DhP9x8) {
-    display: none;
-  }
-  
-/* remove help button*/
-[href="https://support.discord.com"] {
-    display: none;
-}
-
-/* button */
-.theme-dark .lookFilled-yCfaCM.colorGrey-2iAG-B {
-    background-color: #111;
-}
-
-/* stream hover bg color */
-.body-2WIpo7 {
-    background-color: #0c0c0c;
-}
-
-/* bd navbar */
+/* betterdiscord navbar color */
 .colorInfo-1kEg3T {
     background-color: #8268b3;
     color: #fff;
+}
+
+/* replace user popout role bg color with same color as role */
+.role-2TIOKu {
+    transform: translate(0);
+    overflow: hidden;
+
+    --transparency: .4;
+    border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+    margin: 0;
+    left: unset;
+    transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+    position: static;
+}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: var(--transparency);
 }
