@@ -2,16 +2,15 @@
  * @name starburst
  * @description A Discord theme for star-zi.
  * @author starburst
- * @version 1.0.1
+ * @version 1.0.2
  * @website https://github.com/star-zi
  * @source https://raw.githubusercontent.com/star-zi/starburst/main/starburst.theme.css
  * @authorId 709525409821229138
 */
 
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
-@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/Touchup.css");
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
-
+@import url("https://maendisease.github.io/BetterDiscordStuff/css/NormalizedForums.css");
 
 :root {
   --accentcolor: 130,104,179;
@@ -36,7 +35,6 @@
 }
 
 /* custom css below here
-
  * some code was taken from
  * #css-snippets channel in
  * the BetterDiscord server
@@ -47,6 +45,11 @@
     background-color: #0d0d0d;
 }
 
+/* game icon bg color */
+#app-mount .gameIcon-1mDo1J {
+    background-color: #00000000;
+}
+
 /* remove bottom border from MemberCount in sidebar */
 #MemberCount {
     border-bottom: 0px !important;
@@ -54,11 +57,6 @@
 
 /* hide gift button */
 .buttons-uaqb-5>.button-f2h6uQ:not(.BD-TeX-plugin-button)> :not(.translateButton-DhP9x8) {
-    display: none;
-}
-
-/* hide nitro tab in dms */
-#private-channels a[href="/store"] {
     display: none;
 }
 
@@ -91,14 +89,17 @@
     --transparency: .4;
     border-radius: 5px;
 }
+
 .role-2TIOKu .roleRemoveIcon-387wKV {
     margin: 0;
     left: unset;
     transform: translate(50%,-50%);
 }
+
 .role-2TIOKu .roleRemoveButton-17oXnT {
     position: static;
 }
+
 .role-2TIOKu .roleCircle-3K9O3d:before {
     content: '';
     top: 0;
@@ -109,4 +110,26 @@
     position: absolute;
     background: inherit;
     opacity: var(--transparency);
+}
+
+/* consistent account and server join date */
+.discordMemberCreatedAtIconContainer-2oMHqL  {
+    padding: 0px;
+    background-color: var(--background-tertiary);
+}
+
+.discordMemberCreatedAtIcon-126if8 {
+    width: 24px;
+    height: 24px;
+}
+
+.discordMemberCreatedAtText-15sN5q>div{
+    display: none;
+}
+
+.discordMemberCreatedAt-31OkT7>.discordMemberCreatedAtText-15sN5q>h3{
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
+    user-select: text;
 }
