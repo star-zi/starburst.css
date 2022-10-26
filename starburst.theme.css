@@ -2,7 +2,7 @@
  * @name starburst
  * @description A Discord theme for star-zi.
  * @author starburst
- * @version 1.0.2
+ * @version 1.0.3
  * @website https://github.com/star-zi
  * @source https://raw.githubusercontent.com/star-zi/starburst/main/starburst.theme.css
  * @authorId 709525409821229138
@@ -23,8 +23,8 @@
   --textdark: 140,140,140;
   --textdarker: 115,115,115;
   --textdarkest: 80,80,80;
-  --text-normal: #fbfbfb;
-  --text-muted: #b6b6b6;
+  --text-normal: 251,251,251;
+  --text-muted: 182,182,182;
   --backgroundaccent: 18,18,18;
   --backgroundprimary: 13,13,13;
   --backgroundsecondary: 12,12,12;
