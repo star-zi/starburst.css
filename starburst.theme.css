@@ -2,7 +2,7 @@
  * @name starburst
  * @description A Discord theme for star-zi.
  * @author starburst
- * @version 1.0.3
+ * @version 1.0.4
  * @website https://github.com/star-zi
  * @source https://raw.githubusercontent.com/star-zi/starburst/main/starburst.theme.css
  * @authorId 709525409821229138
@@ -41,18 +41,13 @@
 */
 
 /* home button bg color */
-.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover  {
     background-color: #0d0d0d;
 }
 
 /* game icon bg color */
 #app-mount .gameIcon-1mDo1J {
     background-color: #00000000;
-}
-
-/* remove bottom border from MemberCount in sidebar */
-#MemberCount {
-    border-bottom: 0px !important;
 }
 
 /* hide gift button */
@@ -63,11 +58,6 @@
 /* hide help button*/
 .toolbar-3_r2xA .anchor-1MIwyf {
     display: none;
-}
-
-/* SpotifyControls seekbar color */
-.timeline-UWmgAx:hover .barFill-Dhkah7 {
-    background: #8268b3 !important;
 }
 
 /* mute/deafen strikethrough color */
@@ -110,26 +100,4 @@
     position: absolute;
     background: inherit;
     opacity: var(--transparency);
-}
-
-/* consistent account and server join date */
-.discordMemberCreatedAtIconContainer-2oMHqL  {
-    padding: 0px;
-    background-color: var(--background-tertiary);
-}
-
-.discordMemberCreatedAtIcon-126if8 {
-    width: 24px;
-    height: 24px;
-}
-
-.discordMemberCreatedAtText-15sN5q>div{
-    display: none;
-}
-
-.discordMemberCreatedAt-31OkT7>.discordMemberCreatedAtText-15sN5q>h3{
-    font-size: 16px;
-    font-family: inherit;
-    font-weight: 600;
-    user-select: text;
 }
